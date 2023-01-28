@@ -1,5 +1,9 @@
 # Animated-Indicator
 
+Animated Indicator For Page Tab View
+
+# Issue
+
 Belowing Code's minX value has Error when it's index is more than 4
 
 <pre>
@@ -7,18 +11,18 @@ Belowing Code's minX value has Error when it's index is more than 4
 
 GeometryReader{proxy -> Color in
 
-  let minX = proxy.frame(in: .global).minX
+    let minX = proxy.frame(in: .global).minX
   
-  // print(minX)
+    // print(minX)
 
-  DispatchQueue.main.async {
-    withAnimation(.default) {
+    DispatchQueue.main.async {
+        withAnimation(.default) {
 
-      self.offset = -minX
+            self.offset = -minX
+        }
     }
-  }
 
-  return Color.clear
+    return Color.clear
 }
 
 </code>
