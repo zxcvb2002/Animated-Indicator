@@ -11,6 +11,7 @@ extension Color {
     static let mainCyan = Color("Cyan+")
     static let mainYellow = Color("Yellow+")
     static let mainGreen = Color("Green+")
+    static let mainWhite = Color("White+")
 }
 
 struct ContentView: View {
@@ -51,11 +52,12 @@ struct Home: View {
                             .overlay(
                                 
                                 // GeometryReader for getting offset...
+                                
                                 GeometryReader{proxy -> Color in
                                     
                                     let minX = proxy.frame(in: .global).minX
                                     
-                                    print(minX)
+                                    // print(minX)
                                     
                                     DispatchQueue.main.async {
                                         withAnimation(.default) {
