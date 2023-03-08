@@ -28,3 +28,6 @@ GeometryReader{proxy -> Color in
 </code>
 </pre>
 
+# Action
+
+https://user-images.githubusercontent.com/122873008/223861114-2abb2a80-f4e1-4164-abc3-a91ea7a78a88.mp4
